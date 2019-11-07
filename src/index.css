@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'CormorantGaramond-Regular';
+    src: url(./assets/Cormorant_Garamond/CormorantGaramond-Regular.ttf) format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@font-face {
+    font-family: 'CormorantGaramond-Bold';
+    src: url(./assets/Cormorant_Garamond/CormorantGaramond-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'CormorantGaramond-BoldItalic';
+    src: url(./assets/Cormorant_Garamond/CormorantGaramond-BoldItalic.ttf) format('truetype');
+}
+
+.Wrapper {
+    display: flex;
+    min-height: 100vh;
+    height:100vh;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.Welcome {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: ivory;
+    font-size: 40px;
+}
+
+.Header {
+    padding: 5px;
+    text-shadow: 1px 1px black;
+}
+
+@media screen and (max-width: 515px) {
+    .Welcome {
+      font-size: 25px;
+    }
+}
+
+.Rsvp {
+    position: absolute;
+    height: 50px;
+    left: 50%;
+    right: 50%;
+    bottom: 0px;
+    z-index: 10;
+    color: ivory;
+    font-size: 20px;
 }

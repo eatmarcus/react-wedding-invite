@@ -1,10 +1,22 @@
 import React from 'react';
-import './App.css';
+import { Grommet } from 'grommet';
+import { Homepage } from './pages';
+
+const theme = {
+  global: {
+    font: {
+      family: 'CormorantGaramond-Regular',
+      size: '18px',
+      height: '20px',
+    },
+  },
+};
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <Grommet theme={theme}>
+      <Homepage />
+    </Grommet>
   );
 }
 
