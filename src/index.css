@@ -48,12 +48,6 @@
     /* text-shadow: 1px 1px black; */
 }
 
-@media screen and (max-width: 515px) {
-    .Welcome {
-      font-size: 25px;
-    }
-}
-
 .Rsvp {
     position: absolute;
     height: 50px;
@@ -76,6 +70,15 @@
 }
 
 .rsvp-form{
-    width: 300px;
+    width: 365px;
     padding-top: 40px;
+}
+
+@media screen and (max-width: 515px) {
+    .Welcome {
+      font-size: 25px;
+    }
+    .rsvp-form{
+        width: 90%;
+    }
 }

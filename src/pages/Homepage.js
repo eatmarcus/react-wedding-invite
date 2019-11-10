@@ -1,26 +1,28 @@
 import React from 'react';
 import { Box, Image, TextInput, Button } from "grommet";
-import bgOne from '../assets/IMG_63a.JPG';
-import bgTwo from '../assets/IMG_38_edited.jpg';
-import bgThree from '../assets/IMG_43.JPG';
-import bgFour from '../assets/IMG_77.JPG';
-import bgFive from '../assets/IMG_134.JPG';
+import { FormNextLink } from "grommet-icons";
+import bgOne from '../assets/IMG_134.JPG';
 
 class Homepage extends React.Component {
     constructor(props){
         super(props);
+
+        this.state={
+            rsvpCode: ""
+        }
     }
+
+    onInputChange = (e) =>{
+        this.setState({
+            [e.target.id]: e.target.value.toUpperCase()
+        })
+    }
+
     render(){
         return(
             <div>
                  <div className="Wrapper">
-                    {/* <Carousel fill controls={false} play={15000}> */}
-                        {/* <Image fit="cover" src={bgOne} opacity={"medium"}/> */}
-                        <Image fit="cover" src={bgFive}/>
-                        {/* <Image fit="cover" src={bgTwo} opacity={"strong"}/> */}
-                        {/* <Image fit="cover" src={bgThree} opacity={"strong"}/> */}
-                        {/* <Image fit="cover" src={bgFour} opacity={"strong"}/> */}
-                    {/* </Carousel> */}
+                    <Image fit="cover" src={bgOne}/>
                 </div>
                 <div className="Welcome">
                     <Box align="center" pad="large" alignContent="center">
@@ -29,16 +31,18 @@ class Homepage extends React.Component {
                         <span className="Header-date">01/11/2020</span>
                         <div className="rsvp-form">
                             <span className="Header-rsvp">RSVP Code:</span>
-                            <TextInput size="small"/>
-                            <Button />
+                            <TextInput id="rsvpCode" size="small" style={{marginBottom: "5px"}} onChange={this.onInputChange}/>
+                            <Button
+                                label="Submit"
+                                color="#FFFFFF"
+                                style={{float: "right", border: "1px solid #FFFFFF"}}
+                                onClick={()=>{
+                                    //submit
+                                    alert(this.state.rsvpCode);
+                                }}/>
                         </div>
                     </Box>
                 </div>
-                {/* <div className="Rsvp">
-                    <Box align="center" pad="none" alignContent="center" alignSelf="end">
-                      <TextInput />
-                    </Box>
-                </div> */}
             </div>
         )
     }

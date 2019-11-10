@@ -10,7 +10,18 @@ const theme = {
       height: '20px',
     },
     colors: {
-      border: 'white'
+      border: 'white',
+      text: 'white'
+    },
+    control:{
+      border:{
+        color: 'white'
+      }
+    },
+    focus:{
+      border: {
+        color: 'white'
+      }
     }
   },
 };
