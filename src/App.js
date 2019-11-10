@@ -5,10 +5,13 @@ import { Homepage } from './pages';
 const theme = {
   global: {
     font: {
-      family: 'CormorantGaramond-Regular',
+      family: 'Arapey-Regular',
       size: '18px',
       height: '20px',
     },
+    colors: {
+      border: 'white'
+    }
   },
 };
 

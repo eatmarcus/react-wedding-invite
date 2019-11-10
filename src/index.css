@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'CormorantGaramond-Regular';
     src: url(./assets/Cormorant_Garamond/CormorantGaramond-Regular.ttf) format('truetype');
 }
@@ -11,6 +11,11 @@
 @font-face {
     font-family: 'CormorantGaramond-BoldItalic';
     src: url(./assets/Cormorant_Garamond/CormorantGaramond-BoldItalic.ttf) format('truetype');
+} */
+
+@font-face{
+    font-family: 'Arapey-Regular';
+    src: url(./assets/Arapey/Arapey-Regular.ttf) format('truetype');
 }
 
 .Wrapper {
@@ -24,6 +29,7 @@
     left: 0;
     z-index: 5;
     overflow: hidden;
+    opacity: 0.9;
 }
 
 .Welcome {
@@ -33,13 +39,13 @@
     top: 0;
     left: 0;
     z-index: 10;
-    color: ivory;
-    font-size: 40px;
+    color: white;
+    font-size: 35px;
 }
 
 .Header {
     padding: 5px;
-    text-shadow: 1px 1px black;
+    /* text-shadow: 1px 1px black; */
 }
 
 @media screen and (max-width: 515px) {
@@ -57,4 +63,19 @@
     z-index: 10;
     color: ivory;
     font-size: 20px;
+}
+
+.Header-date{
+    padding-top: 5px;
+    /* text-shadow: 1px 1px black; */
+}
+
+.Header-rsvp{
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.rsvp-form{
+    width: 300px;
+    padding-top: 40px;
 }
