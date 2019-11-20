@@ -1,6 +1,12 @@
 import React from 'react';
 import { Grommet } from 'grommet';
-import { Homepage } from './pages';
+import { Homepage, Login, About } from './pages';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
 
 const theme = {
   global: {
@@ -24,12 +30,23 @@ const theme = {
       }
     }
   },
+  formField: {
+    label: {
+      margin: 'none'
+    }
+  }
 };
 
 function App() {
   return (
     <Grommet theme={theme}>
-      <Homepage />
+      <Router>
+        <Switch>
+          <Route path="/login" component={Login}/>
+          <Route path="/about" component={About} />
+          <Route path="/" component={Homepage} />
+        </Switch>
+      </Router>
     </Grommet>
   );
 }

@@ -4,6 +4,7 @@ import './assets/Cormorant_Garamond/CormorantGaramond-Bold.ttf';
 import './assets/Cormorant_Garamond/CormorantGaramond-BoldItalic.ttf';
 import './assets/Cormorant_Garamond/CormorantGaramond-Regular.ttf';
 import './assets/Arapey/Arapey-Regular.ttf';
+import './assets/hello/Hello.ttf';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
