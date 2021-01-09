@@ -34,15 +34,11 @@
     left: 0;
     z-index: 5;
     overflow: hidden;
-    /* opacity: 0.9; */
 }
 
 .bg{
     background-image: url("./assets/IMG_134.JPG"),url("./assets/IMG_134-min.JPG");
-    /* Full height */
     height: 100%;
-
-    /* Center and scale the image nicely */
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
@@ -180,9 +176,5 @@
     }
     .rsvp-form{
         width: 90%;
-    }
-    .login-box{
-        /* width: 90%; */
-        /* top: 10%; */
     }
 }
